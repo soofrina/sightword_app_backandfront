@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@recoil/*": ["./recoil/*"],
+      "@recoil": ["./recoil"],
+      "@base/*": ["./*"],
+      "@components/*": ["./components/*"],
+      "@components": ["./components"],
+      "@pages/*": ["./pages/*"],
+      "@pages": ["./pages"],
+      "@api/*": ["./api/*"],
+      "@api": ["./api"],
+      "@constants/*": ["./constants/*"],
+      "@constants": ["./constants"],
+      "@assets/*": ["./assets/*"],
+      "@assets": ["./assets"],
+      "@type/*": ["./type/*"],
+      "@type": ["./type"],
+      "@utility/*": ["./utility/*"],
+      "@utility": ["./utility"]
+    }
+  }
+}

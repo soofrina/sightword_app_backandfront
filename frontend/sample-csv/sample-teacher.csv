@@ -1,0 +1,4 @@
+name,staff_id,role,email
+Alice,TEA_123,teacher,alice@gmail.com
+Belle,TEA_124,teacher,belle@gmail.com
+Charlotte,ADM_125,admin,charlotte@gmail.com
