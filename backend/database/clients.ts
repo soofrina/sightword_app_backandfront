@@ -22,7 +22,6 @@ const clientSettings: Record<string, ClientConfig> = {
 
 const createClient = (name: keyof typeof clientSettings) => {
   log(`Database client selected: ${yellow(name)}`);
-  log(`Client settings: ${JSON.stringify(clientSettings[name])}`); // Log the client settings for debugging
   return new Client(clientSettings[name]);
 };
 
@@ -40,7 +39,6 @@ export const getClient = () => {
     };
 
     log(`Database client selected: default with modified settings`);
-    log(`Client settings: ${JSON.stringify(modifiedDefaultSettings)}`);
     return new Client(modifiedDefaultSettings);
   }
 
