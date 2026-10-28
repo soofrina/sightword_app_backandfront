@@ -144,5 +144,9 @@
     "storybook-dark-mode": "^1.1.2",
     "tsconfig-paths-webpack-plugin": "^4.0.0",
     "webpack": "^5.74.0"
+  },
+  "engines": {
+    "node": "22.x",
+    "yarn": "1.22.x"
   }
 }
