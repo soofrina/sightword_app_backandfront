@@ -9,9 +9,17 @@ export class UsersService {
     @InjectRepository(User) private userRepository: Repository<User>,
   ) {}
 
-  findOneByEmail(email: string): Promise<User | null> {
-    return this.userRepository.findOneBy({ email });
-  }
+  async findOneByEmail(email: string): Promise<User | null> {
+  const matches = await this.userRepository
+    .createQueryBuilder("u")
+    .where("LOWER(u.email) = LOWER(:email)", {
+      email: email.trim(),
+    })
+    .take(2)
+    .getMany();
+
+  return matches.length === 1 ? matches[0] : null;
+}
 
   async findByEmails(
     emails: string[],
