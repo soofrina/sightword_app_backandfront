@@ -3,6 +3,7 @@
   "version": "0.3.1",
   "private": true,
   "dependencies": {
+    "@craco/craco": "7.1.0",
     "@date-io/date-fns": "1.x",
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
@@ -30,7 +31,6 @@
     "@types/react-swipeable-views-utils": "^0.13.4",
     "axios": "^1.1.3",
     "convert-svg-to-png": "^0.6.4",
-    "craco": "^0.0.3",
     "date-fns": "^2.29.3",
     "dayjs": "^1.11.6",
     "html2canvas": "^1.4.1",
@@ -53,6 +53,7 @@
     "recoil": "^0.7.5",
     "recoil-nexus": "^0.5.0",
     "recoil-persist": "^4.2.0",
+    "serve": "14.2.5",
     "tailwind": "^4.0.0",
     "typescript": "^4.7.4",
     "uuid": "^9.0.0",
